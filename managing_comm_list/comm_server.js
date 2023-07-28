@@ -3,7 +3,7 @@ const csvParser = require('csv-parser');
 const fs = require('fs');
 
 const app = express();
-const csvFile = 'Final list.csv'; // Replace 'data.csv' with the path to your CSV file
+const csvFile = 'Committee_Members.csv'; // Replace 'data.csv' with the path to your CSV file
 
 // Enable CORS (Cross-Origin Resource Sharing) to allow frontend to access the API
 app.use((req, res, next) => {
