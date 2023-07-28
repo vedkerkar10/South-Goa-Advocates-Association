@@ -1,29 +1,25 @@
-// Slideshow for the important judgments table
-let slideIndex = 0;
+// Fetch the data from the Node.js server
+fetch('http://localhost:3000/data')
+    .then(response => response.json())
+    .then(data => {
+        const table = document.getElementById('data-table');
 
-function showSlide(n) {
-    const slides = document.querySelectorAll('#judgementsTable tr:not(:first-child)');
+        // Create the table header
+        const headers = Object.keys(data[0]);
+        const headerRow = table.insertRow();
+        headers.forEach(header => {
+            const th = document.createElement('th');
+            th.textContent = header;
+            headerRow.appendChild(th);
+        });
 
-    // Ensure n is within bounds
-    slideIndex = (n + slides.length) % slides.length;
-
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-    }
-
-    slides[slideIndex].style.display = 'table-row';
-}
-
-function nextSlide() {
-    showSlide(slideIndex + 1);
-}
-
-function previousSlide() {
-    showSlide(slideIndex - 1);
-}
-
-// Automatically advance the slideshow every 5 seconds
-setInterval(nextSlide, 5000);
-
-// Show the first slide initially
-showSlide(slideIndex);
+        // Populate the table with data
+        data.forEach(item => {
+            const row = table.insertRow();
+            Object.values(item).forEach(value => {
+                const cell = row.insertCell();
+                cell.textContent = value;
+            });
+        });
+    })
+    .catch(error => console.error('Error fetching data:', error));
