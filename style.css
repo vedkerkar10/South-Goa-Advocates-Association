@@ -124,3 +124,7 @@ footer {
 #judgementsTable tr:first-child {
   display: table-row;
 }
+
+.centered-header {
+  text-align: center;
+}
