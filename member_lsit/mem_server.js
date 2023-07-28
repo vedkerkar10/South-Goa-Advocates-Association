@@ -32,5 +32,5 @@ app.get('/data', (req, res) => {
 // Start the server
 const port = 3001; // Replace with your desired port number
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+    console.log(`Server is running on https://vedkerkar10.github.io/South-Goa-Advocates-Association/index.html`);
 });

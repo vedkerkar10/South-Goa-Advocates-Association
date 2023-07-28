@@ -1,5 +1,5 @@
 // Fetch the data from the Node.js server
-fetch('http://localhost:3001/data')
+fetch('https://vedkerkar10.github.io/South-Goa-Advocates-Association/index.html')
     .then(response => response.json())
     .then(data => {
         const table = document.getElementById('data-table');
