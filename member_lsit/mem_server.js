@@ -30,7 +30,7 @@ app.get('/data', (req, res) => {
 });
 
 // Start the server
-const port = 3000; // Replace with your desired port number
+const port = 3001; // Replace with your desired port number
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
