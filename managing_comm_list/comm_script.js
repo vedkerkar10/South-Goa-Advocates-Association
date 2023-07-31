@@ -1,25 +1,38 @@
-// Fetch the data from the Node.js server
-fetch('https://vedkerkar10.github.io/South-Goa-Advocates-Association/index.html')
-    .then(response => response.json())
-    .then(data => {
-        const table = document.getElementById('data-table');
+// script.js
+const db = firebase.firestore();
 
-        // Create the table header
-        const headers = Object.keys(data[0]);
-        const headerRow = table.insertRow();
-        headers.forEach(header => {
-            const th = document.createElement('th');
-            th.textContent = header;
-            headerRow.appendChild(th);
+// Fetch the JSON data from Firebase Firestore and populate the table
+db.collection("members")
+    .get()
+    .then((querySnapshot) => {
+        const membersData = [];
+        querySnapshot.forEach((doc) => {
+            membersData.push(doc.data());
         });
 
-        // Populate the table with data
-        data.forEach(item => {
-            const row = table.insertRow();
-            Object.values(item).forEach(value => {
-                const cell = row.insertCell();
-                cell.textContent = value;
+        // Extract the column names from the first object in the JSON data
+        const columnNames = Object.keys(membersData[0]);
+
+        // Populate the table headers
+        const tableHeaders = document.getElementById('tableHeaders');
+        columnNames.forEach(columnName => {
+            const th = document.createElement('th');
+            th.textContent = columnName;
+            tableHeaders.appendChild(th);
+        });
+
+        // Populate the table rows
+        const tbody = document.getElementById('membersData');
+        membersData.forEach(member => {
+            const row = document.createElement('tr');
+            columnNames.forEach(columnName => {
+                const td = document.createElement('td');
+                td.textContent = member[columnName];
+                row.appendChild(td);
             });
+            tbody.appendChild(row);
         });
     })
-    .catch(error => console.error('Error fetching data:', error));
+    .catch((error) => {
+        console.log("Error fetching members data:", error);
+    });

@@ -14,22 +14,47 @@
         <h2>Margao,Goa</h2>
         <h3>103 | GOA | 94</h3>
     </header>
-    <main>
-        <section class="table-section">
-            <h2>Managing Committee List</h2>
-            <div class="table-container">
-                <table id="data-table">
-                    <!-- The table headers will be dynamically added by JavaScript -->
-                </table>
-            </div>
-        </section>
-    </main>
+    <div class="container mt-4">
+        <h2 class="text-center">Members List</h2>
+        <table class="table table-striped mt-3">
+            <thead id="tableHeaders">
+                <!-- Table headers will be populated dynamically with JavaScript -->
+            </thead>
+            <tbody id="membersData">
+                <!-- Table rows will be added dynamically with JavaScript -->
+            </tbody>
+        </table>
+    </div>
 
     <footer>
         <p>&copy; 2023 South Goa Advocates Association. All rights reserved.</p>
     </footer>
 
     <script src="comm_script.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyC6r8QCR6-3B4jNpldx7kC3gmQpoV4Jh-Q",
+            authDomain: "south-goa-advocate-assoc-89f7d.firebaseapp.com",
+            projectId: "south-goa-advocate-assoc-89f7d",
+            storageBucket: "south-goa-advocate-assoc-89f7d.appspot.com",
+            messagingSenderId: "31419243814",
+            appId: "1:31419243814:web:623ad82a5518b4bd18b5e7",
+            measurementId: "G-8DJ8W170NT"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 
 </body>
 
