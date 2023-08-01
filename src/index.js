@@ -1,5 +1,5 @@
 import {initializeApp} from 'firebase/app'
-import {collection, getDocs,getFirestore} from 'firebase/firestore'
+import {collection, getDocs,getFirestore,setDoc,doc} from 'firebase/firestore'
 
 
 
@@ -28,6 +28,18 @@ const db = getFirestore(app);
 
 const querySnapshot = await getDocs(collection(db, "Users"));
 querySnapshot.forEach((doc) => {
-  console.log(`${doc.id} => ${doc.data()['Age']}`);
+  console.log(`${doc.id} => ${doc.data()['Name']}`);
   addMemberToList(doc.data())
 });
+
+
+document.getElementById('Buttonnn').addEventListener('click',AddTheDoc)
+async function AddTheDoc(){
+    await setDoc(doc(db, "Users","HELLO"), {
+        Name: "Los Angeles",
+      });
+}
+
+
+
+
