@@ -5,7 +5,7 @@
     $servername = "localhost";
     $dusername = "root";
     $dpassword = "";
-    $dbname = "sgaa";
+    $dbname = "db_sgaa";
 
     $conn = mysqli_connect($servername,$dusername,$dpassword,$dbname);
     // $conn = new mysqli('localhost','root','trashco');

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>South Goa Advocates Association</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
     <style>
         table {
             border-collapse: collapse;
@@ -35,7 +37,7 @@
     </header>
     <main>
         <section class="table-section">
-            <h2>Managing Committee List</h2>
+            <h2 class="text-center">Managing Committee List</h2>
             <div class="table-container">
                 <table id="data-table">
                     <tr>
@@ -63,6 +65,7 @@
     </footer>
 
     <script src="comm_script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>
 
