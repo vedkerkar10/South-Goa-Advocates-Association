@@ -14,16 +14,24 @@
         <h2>Margao,Goa</h2>
         <h3>103 | GOA | 94</h3>
     </header>
-    <main>
-        <section class="table-section">
-            <h2>Managing Committee List</h2>
-            <div class="table-container">
-                <table id="data-table">
-                    <!-- The table headers will be dynamically added by JavaScript -->
-                </table>
-            </div>
-        </section>
-    </main>
+    <table>
+        <tr>
+            <?php foreach ($data[0] as $column => $value): ?>
+            <th>
+                <?= $column ?>
+            </th>
+            <?php endforeach; ?>
+        </tr>
+        <?php foreach ($data as $row): ?>
+        <tr>
+            <?php foreach ($row as $value): ?>
+            <td>
+                <?= $value ?>
+            </td>
+            <?php endforeach; ?>
+        </tr>
+        <?php endforeach; ?>
+    </table>
 
     <footer>
         <p>&copy; 2023 South Goa Advocates Association. All rights reserved.</p>
