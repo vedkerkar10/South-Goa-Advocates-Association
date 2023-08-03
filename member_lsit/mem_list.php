@@ -23,8 +23,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>South Goa Advocates Association</title>
     <link rel="stylesheet" href="../css/style.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
-    <script src="../tailwind.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        /* Add custom CSS for horizontal scroll */
+        .table-container {
+            overflow-x: auto;
+        }
+
+        /* Optional: Style the table for better visibility */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,8 +58,8 @@
     <main>
         <section class="table-section ">
             <h1 class="text-center">Members List</h1>
-            <div class="container horizontal-scrollable">
-                <table class="font-serif ... id="data-table" style="overflow-x:scroll; width:90vw;">
+            <div class="container table-container">
+                <table >
                     <!-- The table headers will be dynamically added by JavaScript -->
                     <tr>
                         <th>Serial No.</th>
