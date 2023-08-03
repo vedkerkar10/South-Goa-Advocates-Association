@@ -75,6 +75,15 @@
     </div>
   </div>
 </nav>
+<div class="container d-flex justify-content-end mb-2s">
+                <div class="form-outline">
+                    <input type="search" id="form1" class="form-control" />
+                    <label class="form-label" for="form1">Search</label>
+                </div>
+                <button type="button" class="btn btn-primary ms-4">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
         <section class="table-section ">
             <h1 class="text-center">Members List</h1>
             <div class="container table-container">
@@ -106,7 +115,7 @@
                     $sql = "SELECT * FROM members";
                     $result = $conn->query($sql);
                     while ($row = $result->fetch_assoc()) {
-                        echo "<tr>";
+                        echo "<tr class='data-row'>";
                         echo "<td>" . $row["COL 1"] . "</td>";
                         echo "<td>" . $row["COL 2"] . "</td>";
                         echo "<td>" . $row["COL 3"] . "</td>";
@@ -142,5 +151,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const searchBar = document.getElementById("form1");
+    const tableRows = document.querySelectorAll(".table-container table tbody tr");
+
+    searchBar.addEventListener("input", function () {
+      const searchValue = searchBar.value.trim().toLowerCase();
+
+      tableRows.forEach(function (row) {
+        const columns = row.querySelectorAll("td");
+
+        let foundMatch = false;
+        columns.forEach(function (column) {
+          if (column.textContent.trim().toLowerCase().includes(searchValue)) {
+            foundMatch = true;
+          }
+        });
+
+        if (foundMatch) {
+          row.style.display = "";
+        } else {
+          row.style.display = "none";
+        }
+      });
+    });
+  });
+</script>
 
 </html>
