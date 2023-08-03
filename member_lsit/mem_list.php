@@ -35,9 +35,9 @@
     </header>
     <main>
         <section class="table-section ">
-            <h2 class="text-center">Members List</h2>
+            <h1 class="text-center">Members List</h1>
             <div class="container horizontal-scrollable">
-                <table id="data-table" style="overflow-x:scroll; width:90vw;">
+                <table class="font-serif ... id="data-table" style="overflow-x:scroll; width:90vw;">
                     <!-- The table headers will be dynamically added by JavaScript -->
                     <tr>
                         <th>Serial No.</th>
