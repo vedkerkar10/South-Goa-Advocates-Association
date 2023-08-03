@@ -23,8 +23,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>South Goa Advocates Association</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <script src="../tailwind.js"></script>
 </head>
 
 <body>
@@ -34,10 +34,10 @@
         <h3>103 | GOA | 94</h3>
     </header>
     <main>
-        <section class="table-section">
+        <section class="table-section ">
             <h2 class="text-center">Members List</h2>
             <div class="container horizontal-scrollable">
-                <table id="data-table">
+                <table id="data-table" style="overflow-x:scroll; width:90vw;">
                     <!-- The table headers will be dynamically added by JavaScript -->
                     <tr>
                         <th>Serial No.</th>
