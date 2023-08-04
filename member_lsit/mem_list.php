@@ -22,8 +22,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>South Goa Advocates Association</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../src/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <style>
         /* Add custom CSS for horizontal scroll */
         .table-container {
@@ -34,13 +36,15 @@
         table {
             border-collapse: collapse;
             width: 100%;
+
         }
 
         th,
         td {
-            border: 1px solid #ddd;
+            border: 1px solid #010101;
             padding: 8px;
             text-align: center;
+           
         }
 
         th {
@@ -77,11 +81,12 @@
 </nav>
 <div class="container d-flex justify-content-end mb-2s">
                 <div class="form-outline">
-                    <input type="search" id="form1" class="form-control" />
-                    <label class="form-label" for="form1">Search</label>
+                    <input type="search" id="form1" class="form-control" placeholder="Search"/>
                 </div>
-                <button type="button" class="btn btn-primary ms-4">
-                    <i class="fas fa-search"></i>
+                <button type="button" style="width:40px; height:40px; display:flex; align-items:center;justify-content:center;" class="btn btn-primary ms-4 ">
+                    <span class="material-symbols-outlined">
+search
+</span>
                 </button>
             </div>
         <section class="table-section ">
@@ -89,7 +94,7 @@
             <div class="container table-container">
                 <table >
                     <!-- The table headers will be dynamically added by JavaScript -->
-                    <tr>
+                    <tr id="HeadOfTable">
                         <th>Serial No.</th>
                         <th>Bar Registration Number of Advocate</th>
                         <th>Name of Advocate</th>
@@ -148,9 +153,10 @@
     <footer>
         <p>&copy; 2023 South Goa Advocates Association. All rights reserved.</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
   
 </body>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const searchBar = document.getElementById("form1");
@@ -161,7 +167,6 @@
 
       tableRows.forEach(function (row) {
         const columns = row.querySelectorAll("td");
-
         let foundMatch = false;
         columns.forEach(function (column) {
           if (column.textContent.trim().toLowerCase().includes(searchValue)) {
@@ -174,6 +179,8 @@
         } else {
           row.style.display = "none";
         }
+        document.getElementById('HeadOfTable').style.display=''
+
       });
     });
   });
