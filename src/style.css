@@ -48,6 +48,45 @@ header h1 {
   border-bottom: 2px solid #333;
   padding-bottom: 10px;
   margin-bottom: 15px;
+  position: relative;
+}
+
+.related-sites {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  /* Adjust the width as needed */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.related-sites h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.related-sites ul {
+  list-style: none;
+  padding: 0;
+}
+
+.related-sites li {
+  margin-bottom: 10px;
+}
+
+.related-sites a {
+  color: #333;
+  text-decoration: none;
+}
+
+.related-sites a:hover {
+  color: #555;
 }
 
 .button {
