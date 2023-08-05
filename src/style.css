@@ -116,7 +116,10 @@ header h1 {
 }
 
 .important-judgements {
-  margin-top: 30px;
+  width: 50%;
+  margin: auto;
+  /* padding: 20px;
+  margin-top: 30px; */
   text-align: center;
 }
 
