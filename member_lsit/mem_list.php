@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
+
     
     
 </body>
@@ -70,34 +70,49 @@
     .navbar-nav a:hover {
         background-color: #555; /* Add a background color on hover */
     }
-      
+    
+    header img {
+        max-width: 10px;
+        margin-right: 1110px;
+        margin-top: -10em;
+    }
+
     </style>
 </head>
 
-<body>
+
+    
+
+<body style="height: 100vh; display: flex; flex-direction: column; justify-content: space-between;">
     <header>
-        <h1>South Goa Advocates Association</h1>
-        <h2>Margao,Goa</h2>
-        <h3>103 | GOA | 94</h3>
-        <nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" style="color: white;" aria-current="page" href="../src/index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a style="color: white;" class="nav-link" href="#">About</a>
-        </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
+        <div id="header">
+            <h1>SOUTH GOA ADVOCATES ASSOCIATION</h1>
+            <h2>Margao,Goa</h2>
+        </div>
+        <img src="../imgs/t2.png" alt="" class="img-fluid" style="max-width: 150px;">
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav-bar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" id="homeabout">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" aria-current="page"
+                                href="../src/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: white;" class="nav-link" href="#">About</a>
+                        </li>
+                        <li><a style="color: white;" class="nav-link"
+                                href="https://twitter.com/AlphaQ12345?s=03">Contacts</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
     
