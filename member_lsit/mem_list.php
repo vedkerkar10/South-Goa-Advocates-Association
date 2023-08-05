@@ -50,6 +50,27 @@
         th {
             background-color: #333;
         }
+
+        .navbar {
+        background-color: #333; /* Set the background color to a dark color */
+        color: white; /* Set the text color to white */
+        display: flex;
+        justify-content: flex-end; /* Align the content to the right side */
+        }
+        .navbar-nav {
+        margin-right: 20px; /* Add some right margin for the navigation items */
+    }
+  
+    .navbar-nav a {
+        color: white; /* Set the anchor text color to white */
+        text-decoration: none;
+        padding: 10px 15px; /* Add some padding for better appearance */
+    }
+
+    .navbar-nav a:hover {
+        background-color: #555; /* Add a background color on hover */
+    }
+      
     </style>
 </head>
 
@@ -58,9 +79,7 @@
         <h1>South Goa Advocates Association</h1>
         <h2>Margao,Goa</h2>
         <h3>103 | GOA | 94</h3>
-    </header>
-    <main>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,16 +88,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../src/index.html">Home</a>
+          <a class="nav-link" style="color: white;" aria-current="page" href="../src/index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a style="color: white;" class="nav-link" href="#">About</a>
         </li>
         
       </ul>
     </div>
   </div>
 </nav>
+    </header>
+    <main>
+    
 <div class="container d-flex justify-content-end mb-2s">
                 <div class="form-outline">
                     <input type="search" id="form1" class="form-control" placeholder="Search"/>

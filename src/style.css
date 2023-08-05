@@ -19,8 +19,19 @@ header {
   background-color: #333;
   color: #fff;
   border-top: #333;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
+}
+
+#header {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#homeabout {
+  margin-left: 80em;
+  margin-bottom: -20px;
+  margin-top: -2em;
 }
 
 header h1 {
@@ -31,6 +42,14 @@ header h1 {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
+}
+
+#nav-bar {
+  background-color: #333;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
 }
 
 .left-section,

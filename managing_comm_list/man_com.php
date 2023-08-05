@@ -35,9 +35,7 @@
         <h1>South Goa Advocates Association</h1>
         <h2>Margao, Goa</h2>
         <h3>103 | GOA | 94</h3>
-    </header>
-    <main>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,16 +44,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../src/index.html">Home</a>
+          <a class="nav-link" style="color: white;" aria-current="page" href="../src/index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a style="color: white;" class="nav-link" href="#">About</a>
         </li>
         
       </ul>
     </div>
   </div>
 </nav>
+    </header>
+    <main>
+    <br>
         <section class="table-section">
             <h2 class="text-center">Managing Committee List</h2>
             <div class="table-container">
