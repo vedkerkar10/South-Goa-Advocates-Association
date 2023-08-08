@@ -26,9 +26,17 @@ header {
   text-align: center;
 }
 
-#header {
+#header{
   padding: 20px;
   margin-top: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#header h1{
+  font-size: 2em;
+  width: 66%;
 }
 
 #homeabout a{
