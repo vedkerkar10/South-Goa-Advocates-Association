@@ -133,49 +133,16 @@ search
                     <!-- The table headers will be dynamically added by JavaScript -->
                     <tr id="HeadOfTable">
                         <th>Serial No.</th>
-                        <th>Bar Registration Number of Advocate</th>
                         <th>Name of Advocate</th>
-                         <th>Full name of Advocate</th>
-                          <th>Name of Advocate in Local Language</th> 
-                          <th>Date of Birth of Advocate</th>
-                           <th>Gender of Advocate</th> 
-                           <th>Address of Advocate</th> 
-                           <th>Address of Advocate in Local Language</th> 
-                           <th>Email of Advocate</th> 
-                           <th>Mobile number of Advocate</th> 
-                           <th>Phone Number of Advocate</th> 
-                           <th>Fax Number</th>
-                            <th>Office Address of Advocate</th>
-                             <th>Pin Code</th> 
-                             
-                        <th>District</th>
-                        <th>Taluka</th>
-                        <th>Office Address of Lawyer in local language</th>
                     </tr>
                     <?php
                     $conn = mysqli_connect("localhost", "root", "", "db_sgaa");
-                    $sql = "SELECT * FROM members";
+                    $sql = "SELECT * FROM life_members_1";
                     $result = $conn->query($sql);
                     while ($row = $result->fetch_assoc()) {
                         echo "<tr class='data-row'>";
                         echo "<td>" . $row["COL 1"] . "</td>";
                         echo "<td>" . $row["COL 2"] . "</td>";
-                        echo "<td>" . $row["COL 3"] . "</td>";
-                        echo "<td>" . $row["COL 4"] . "</td>";
-                        echo "<td>" . $row["COL 5"] . "</td>";
-                        echo "<td>" . $row["COL 6"] . "</td>";
-                        echo "<td>" . $row["COL 7"] . "</td>";
-                        echo "<td>" . $row["COL 8"] . "</td>";
-                        echo "<td>" . $row["COL 9"] . "</td>";
-                        echo "<td>" . $row["COL 10"] . "</td>";
-                        echo "<td>" . $row["COL 11"] . "</td>";
-                        echo "<td>" . $row["COL 12"] . "</td>";
-                        echo "<td>" . $row["COL 13"] . "</td>";
-                        echo "<td>" . $row["COL 14"] . "</td>";
-                        echo "<td>" . $row["COL 15"] . "</td>";
-                        echo "<td>" . $row["COL 16"] . "</td>";
-                        echo "<td>" . $row["COL 17"] . "</td>";
-                        echo "<td>" . $row["COL 18"] . "</td>";
                         echo "</tr>";
                     }
                     ?>
