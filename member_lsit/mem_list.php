@@ -115,12 +115,11 @@
         </nav>
     </header>
     <main>
-    
 <div class="container d-flex justify-content-end mb-2s">
-                <div class="form-outline">
+                <div class="form-outline" style="margin-top: 10px;" >
                     <input type="search" id="form1" class="form-control" placeholder="Search"/>
                 </div>
-                <button type="button" style="width:40px; height:40px; display:flex; align-items:center;justify-content:center;" class="btn btn-primary ms-4 ">
+                <button type="button" style="margin-top:10px; width:40px; height:40px; display:flex; align-items:center;justify-content:center;" class="btn btn-primary ms-4 ">
                     <span class="material-symbols-outlined">
 search
 </span>
