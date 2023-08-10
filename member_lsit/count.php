@@ -8,6 +8,7 @@ $hits[0] ++;
 $fp = fopen($count_page , "w");
 fputs($fp , "$hits[0]");
 fclose($fp);
+echo ("No. of visitors")
 echo $hits[0];
  
 ?>
