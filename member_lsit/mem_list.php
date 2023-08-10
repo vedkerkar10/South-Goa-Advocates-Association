@@ -136,7 +136,7 @@ search
                     </tr>
                     <?php
                     $conn = mysqli_connect("localhost", "root", "", "db_sgaa");
-                    $sql = "SELECT * FROM life_members_1";
+                    $sql = "SELECT * FROM life_member_1";
                     $result = $conn->query($sql);
                     while ($row = $result->fetch_assoc()) {
                         echo "<tr class='data-row'>";

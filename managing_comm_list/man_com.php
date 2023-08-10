@@ -85,8 +85,9 @@
                     $result = $conn->query($sql);
                     while ($row = $result->fetch_assoc()) {
                         echo "<tr>";
-                        echo "<td>" . $row["Sr_No"] . "</td>";
-                        echo "<td>" . $row["Name"] . "</td>";
+                        echo "<td>" . $row["COL 1"] . "</td>";
+                        echo "<td>" . $row["COL 2"] . "</td>";
+                        // echo "<td>" . $row["COL 4"] . "</td>";
                         echo "</tr>";
                     }
                     ?>
