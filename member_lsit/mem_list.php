@@ -147,8 +147,10 @@ search
                     }
                     ?>
                 </table>
-                <?php
-    ?>
+
+                <?php include('count.php') ?>
+       
+    
                 
             </div>
         </section>
