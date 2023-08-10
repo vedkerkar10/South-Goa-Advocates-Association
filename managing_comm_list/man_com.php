@@ -62,7 +62,7 @@
                             <a style="color: white;" class="nav-link" href="#">About</a>
                         </li>
                         <li><a style="color: white;" class="nav-link"
-                                href="https://twitter.com/AlphaQ12345?s=03">Contacts</a></li>
+                                href="https://twitter.com/AlphaQ12345?s=03">Contact Us</a></li>
 
                     </ul>
                 </div>
@@ -78,6 +78,7 @@
                     <tr>
                         <th>Serial No.</th>
                         <th>Name</th>
+                        <th>Designation</th>
                     </tr>
                     <?php
                     $conn = mysqli_connect("localhost", "root", "", "db_sgaa");
@@ -85,9 +86,9 @@
                     $result = $conn->query($sql);
                     while ($row = $result->fetch_assoc()) {
                         echo "<tr>";
-                        echo "<td>" . $row["COL 1"] . "</td>";
-                        echo "<td>" . $row["COL 2"] . "</td>";
-                        // echo "<td>" . $row["COL 4"] . "</td>";
+                        echo "<td>" . $row["Sr_No"] . "</td>";
+                        echo "<td>" . $row["Name"] . "</td>";
+                        echo "<td>" . $row["Designation"] . "</td>";
                         echo "</tr>";
                     }
                     ?>

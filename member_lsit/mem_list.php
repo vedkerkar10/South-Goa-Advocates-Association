@@ -107,7 +107,7 @@
                             <a style="color: white;" class="nav-link" href="#">About</a>
                         </li>
                         <li><a style="color: white;" class="nav-link"
-                                href="https://twitter.com/AlphaQ12345?s=03">Contacts</a></li>
+                                href="https://twitter.com/AlphaQ12345?s=03">Contact Us</a></li>
 
                     </ul>
                 </div>
