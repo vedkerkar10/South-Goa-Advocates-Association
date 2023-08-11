@@ -37,6 +37,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 #header h1 {
@@ -54,11 +55,12 @@ header {
 }
 
 #homeabout {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  gap: 6px;
-  justify-content: end;
   margin-top: 10px;
+  justify-content: end;
+  align-items: end;
+  gap: 6px; 
 }
 
 header h1 {
@@ -71,13 +73,8 @@ header h1 {
   margin-top: 30px;
 }
 
-#nav-bar {
-  background-color: #333;
-  padding: 10px 0;
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-}
+
+
 
 .left-section,
 .right-section {
