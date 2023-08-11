@@ -40,14 +40,14 @@ CREATE TABLE `managing_committee` (
 INSERT INTO `managing_committee` (`Sr_No`, `Name`, `Designation`) VALUES
 (1, 'Adv. Prasad S. Naik', 'President'),
 (2, 'Adv. Shraddha Borkar', 'Vice President'),
-(3, 'Adv. Roheet Shirodka', 'Secretary'),
+(3, 'Adv. Roheet Shirodkar', 'Secretary'),
 (4, 'Adv. Chuvo Barbosa', 'Treasurer'),
-(5, 'Adv. Ashtrid N. Alme', 'Female Member'),
+(5, 'Adv. Ashtrid N. Almeida', 'Female Member'),
 (6, 'Adv. Prashant Borkar', 'Margao Member'),
 (7, 'Adv. Sudhir Naik', 'Vasco Member'),
-(8, 'Adv. Anju S. Naik Am', 'Quepem Member'),
-(9, 'Adv. Kashinath Sawan', 'Sanguem Member'),
-(10, 'Adv. Kunal Komarpant', 'Canacona Member');
+(8, 'Adv. Anju S. Naik Amonkar', 'Quepem Member'),
+(9, 'Adv. Kashinath Sawant Dessai', 'Sanguem Member'),
+(10, 'Adv. Kunal D. Komarpant', 'Canacona Member');
 
 --
 -- Indexes for dumped tables
