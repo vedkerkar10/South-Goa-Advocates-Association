@@ -29,6 +29,7 @@
         <div id="header">
             <h1 class="fs-1">SOUTH GOA ADVOCATES ASSOCIATION</h1>
             <h2 class="fs-1">Margao,Goa</h2>
+            <?php include('count.php') ?>
         </div>
         <img src="../imgs/t2.png" alt="" class="img-fluid" style="max-width: 150px;">
         <nav class="navbar navbar-expand-lg navbar-light" id="nav-bar">
