@@ -97,6 +97,66 @@
         </form>
     </div>
 
+
+    //delete
+    <!-- <div class="login-card">
+        <div class="card-header">
+            <div class="log">Delete List</div>
+        </div>
+        <form action="delete_mc.php" method="POST">
+            <div class="form-group">
+                
+                <label for="Sr_No">Sr_No:</label>
+                <input required="" name="Sr_No" id="Sr_No" type="text">
+            </div>
+            <div class="form-group">
+                
+                <!-- <label for="Name">Name:</label>
+                <input required="" name="Name" id="Name" type="text">
+            </div>
+            <div class="form-group">
+                
+                <label for="Designation">Designation:</label>
+                <input required="" name="Designation" id="Designation" type="text">
+            </div> -->
+
+
+
+            <div class="form-group">
+                <input value="Delete" type="submit">
+            </div> -->
+
+            <div class="login-card">
+        <div class="card-header">
+            <div class="log">Insert List</div>
+        </div>
+        <form action="create_mc.php" method="POST">
+            <div class="form-group">
+                
+                <label for="Sr_No">Sr_No:</label>
+                <input required="" name="Sr_No" id="Sr_No" type="text">
+            </div>
+            <div class="form-group">
+                
+                <label for="Name">Name:</label>
+                <input required="" name="Name" id="Name" type="text">
+            </div>
+            <div class="form-group">
+                
+                <label for="Designation">Designation:</label>
+                <input required="" name="Designation" id="Designation" type="text">
+            </div>
+
+
+
+            <div class="form-group">
+                <input value="Insert" type="submit">
+            </div>
+        </form>
+    </div>
+        </form>
+    </div>
+
     
 
 
