@@ -74,9 +74,22 @@
         </div>
         <form action="update_mc.php" method="POST">
             <div class="form-group">
-                <label for="username">Name:</label>
-                <input required="" name="username" id="username" type="text">
+                
+                <label for="Sr_No">Sr_No:</label>
+                <input required="" name="Sr_No" id="Sr_No" type="text">
             </div>
+            <div class="form-group">
+                
+                <label for="Name">Name:</label>
+                <input required="" name="Name" id="Name" type="text">
+            </div>
+            <div class="form-group">
+                
+                <label for="Designation">Designation:</label>
+                <input required="" name="Designation" id="Designation" type="text">
+            </div>
+
+
 
             <div class="form-group">
                 <input value="Update" type="submit">
