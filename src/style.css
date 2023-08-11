@@ -1,4 +1,8 @@
 /* Reset default margin and padding for all elements */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body,
 h1,
 h2,
@@ -26,27 +30,30 @@ header {
   text-align: center;
 }
 
-#header{
+#header {
   padding: 20px;
   margin-top: 20px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#header h1{
+
+#header h1 {
   font-size: 2em;
   width: 66%;
 }
 
-#homeabout a{
-color: #ffffff;
-padding: 3px;
+#homeabout a {
+  color: #ffffff;
+  padding: 3px;
 }
-#homeabout a:hover{
+
+#homeabout a:hover {
   color: #105bf2;
 }
-#homeabout{
+
+#homeabout {
   display: flex;
   flex-direction: row;
   gap: 6px;
