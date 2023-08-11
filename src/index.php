@@ -25,11 +25,15 @@
 </style>
 
 <body style=" display: flex; flex-direction: column; ">
+
     <header>
         <div id="header">
-            <h1 class="fs-1">SOUTH GOA ADVOCATES ASSOCIATION</h1>
-            <h2 class="fs-1">Margao,Goa</h2>
-            <?php include('count.php') ?>
+            <div id="visitor-count" style="position: fixed; top: 10px; right: 10px; font-size:120%" >
+                <?php include('count.php'); ?>
+             </div>
+        <h1 class="fs-1">SOUTH GOA ADVOCATES ASSOCIATION</h1>
+        <h2 class="fs-1">Margao,Goa</h2>
+            
         </div>
         <img src="../imgs/t2.png" alt="" class="img-fluid" style="max-width: 150px;">
         <nav class="navbar navbar-expand-lg navbar-light" id="nav-bar">
@@ -43,10 +47,10 @@
 
                     <ul class="navbar-nav" id="homeabout">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../src/index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="../src/index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a " class=" nav-link" href="admin.html">About</a>
+                            <a class=" nav-link" href="../admin/admin.html">About</a>
                         </li>
                         <li><a class="nav-link" href="https://twitter.com/AlphaQ12345?s=03">Contact Us</a></li>
 

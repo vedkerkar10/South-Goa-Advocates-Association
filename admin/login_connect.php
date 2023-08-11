@@ -14,8 +14,9 @@
 
     if ($num ==1) {
         $login = true;
-        echo " YOU are logged in \n";
-        echo "\n HI $username";
+        include 'admin_2.html';
+        // echo " YOU are logged in \n";
+        // echo "\n HI $username";
 
     }
     else {
