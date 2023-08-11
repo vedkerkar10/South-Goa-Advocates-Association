@@ -1,7 +1,4 @@
 /* Reset default margin and padding for all elements */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body,
 h1,
@@ -60,7 +57,7 @@ header {
   margin-top: 10px;
   justify-content: end;
   align-items: end;
-  gap: 6px; 
+  gap: 6px;
 }
 
 header h1 {
