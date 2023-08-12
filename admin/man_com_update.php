@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/style.css">
+    <title>Admin</title>
 </head>
 <style>
     .login-card {
@@ -68,11 +71,41 @@
 <br><br><br>
 
 <body>
+    <section class="content" >
+    <div class="left-section" style="margin-left: auto;"> 
+        <div class="login-card">
+            <div class="card-header">
+                <div class="log">Update List</div>
+            </div>
+            <form action="update_mc.php" method="POST">
+                <div class="form-group">
+                
+                <label for="Sr_No">Sr_No:</label>
+                <input required="" name="Sr_No" id="Sr_No" type="text">
+                </div>
+            <div class="form-group">
+                <label for="Name">Name:</label>
+                <input required="" name="Name" id="Name" type="text"> 
+            </div>
+            <div class="form-group">
+                
+                <label for="Designation">Designation:</label>
+                <input required="" name="Designation" id="Designation" type="text">
+            </div>
+            <div class="form-group">
+                <input value="Update" type="submit">
+            </div>
+        </form>
+    </div>
+</div>
+    
+    <div class="right-section" style="margin-right: auto;" >    
+    
     <div class="login-card">
         <div class="card-header">
-            <div class="log">Update List</div>
+            <div class="log">Delete List</div>
         </div>
-        <form action="update_mc.php" method="POST">
+        <form action="delete_mc.php" method="POST">
             <div class="form-group">
                 
                 <label for="Sr_No">Sr_No:</label>
@@ -92,12 +125,12 @@
 
 
             <div class="form-group">
-                <input value="Update" type="submit">
+                <input value="Delete" type="submit">
             </div>
         </form>
     </div>
-
-
+    </div>
+    </section>
     //delete
     <!-- <div class="login-card">
         <div class="card-header">
@@ -120,46 +153,13 @@
                 <input required="" name="Designation" id="Designation" type="text">
             </div> -->
 
-
-
-            <div class="form-group">
-                <input value="Delete" type="submit">
-            </div> -->
-
-            <div class="login-card">
-        <div class="card-header">
-            <div class="log">Insert List</div>
-        </div>
-        <form action="create_mc.php" method="POST">
-            <div class="form-group">
-                
-                <label for="Sr_No">Sr_No:</label>
-                <input required="" name="Sr_No" id="Sr_No" type="text">
-            </div>
-            <div class="form-group">
-                
-                <label for="Name">Name:</label>
-                <input required="" name="Name" id="Name" type="text">
-            </div>
-            <div class="form-group">
-                
-                <label for="Designation">Designation:</label>
-                <input required="" name="Designation" id="Designation" type="text">
-            </div>
-
-
-
-            <div class="form-group">
-                <input value="Insert" type="submit">
-            </div>
-        </form>
-    </div>
-        </form>
-    </div>
+   
 
     
 
 
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </html>
