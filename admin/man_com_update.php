@@ -100,7 +100,6 @@
 </div>
     
     <div class="right-section" style="margin-right: auto;" >    
-    
     <div class="login-card">
         <div class="card-header">
             <div class="log">Delete List</div>
@@ -131,6 +130,9 @@
     </div>
     </div>
     </section>
+    
+
+
     //delete
     <!-- <div class="login-card">
         <div class="card-header">
