@@ -26,8 +26,8 @@
             position: fixed;
             top: 10px;
             right: 10px;
-            background-color: #333;
-            color: white;
+             background-color: #333; 
+             color: white; 
             padding: 5px 10px;
             border-radius: 5px;
         }
@@ -58,9 +58,12 @@
                             <a class="nav-link" aria-current="page" href="../src/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a " class=" nav-link" href="../admin/admin.html">About</a>
+                            <a " class=" nav-link" href="About.html">About</a>
                         </li>
-                        <li><a class="nav-link" href="https://twitter.com/AlphaQ12345?s=03">Contact Us</a></li>
+                        <li><a class="nav-link" href="Contact_us.html">Contact Us</a></li>
+                        <li>
+                            <a class="nav-link" >Gallery</a>
+                        </li>
 
                     </ul>
                 </div>
