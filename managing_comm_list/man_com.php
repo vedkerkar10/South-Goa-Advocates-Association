@@ -32,10 +32,25 @@
         margin-right: 1110px;
         margin-top: -10em;
     }
+        .member {
+      display: inline-block;
+      text-align: center;
+      margin: 10px;
+    }
+
+    .member img {
+      width: 150px;
+      height: 150px;
+      border: 2px solid #333;
+      border-radius: 50%;
+    }
+
+    .member p {
+      margin-top: 5px;
+      font-weight: bold;
+    }
     </style>
 </head>
-
-
 
 
 <body style="height: 100vh; display: flex; flex-direction: column; justify-content: space-between;">
@@ -70,31 +85,55 @@
         </nav>
     </header>
     <main>
+    <h2 class="text-center" >Managing Committee Members</h2>
+  <div class="member" style="margin-left: 45%;" >  
+    <img src="../imgs/image.png" alt="Member 1">
+    <p>President</p>
+  </div>
+  <br>
+  <div class="member" style="margin-left: 17%;">
+    <img src="../imgs/image.png" alt="Member 2">
+    <p>Gay</p>
+  </div>
+  <div class="member" style="margin-left: 17%;">
+    <img src="../imgs/image.png" alt="Member 2">
+    <p>Gay</p>
+  </div>
+  <div class="member" style="margin-left: 17%;">
+    <img src="../imgs/image.png" alt="Member 2">
+    <p>Gay</p>
+  </div>
+  <br>
+  <div class="member" style="margin-left: 17%;">
+    <img src="../imgs/image.png" alt="Member 2">
+    <p>Gay</p>
+  </div>
+  <div class="member" style="margin-left: 17%;">
+    <img src="../imgs/image.png" alt="Member 2">
+    <p>Gay</p>
+  </div>
+  <div class="member" style="margin-left: 17%;">
+    <img src="../imgs/image.png" alt="Member 2">
+    <p>Gay</p>
+</div>
     <br>
-        <section class="table-section">
-            <h2 class="text-center">Managing Committee List</h2>
-            <div class="table-container">
-                <table id="data-table">
-                    <tr>
-                        <th>Serial No.</th>
-                        <th>Name</th>
-                        <th>Designation</th>
-                    </tr>
-                    <?php
-                    $conn = mysqli_connect("localhost", "root", "", "db_sgaa");
-                    $sql = "SELECT * FROM managing_committee";
-                    $result = $conn->query($sql);
-                    while ($row = $result->fetch_assoc()) {
-                        echo "<tr>";
-                        echo "<td>" . $row["Sr_No"] . "</td>";
-                        echo "<td>" . $row["Name"] . "</td>";
-                        echo "<td>" . $row["Designation"] . "</td>";
-                        echo "</tr>";
-                    }
-                    ?>
-                </table>
-            </div>
-        </section>
+    <div class="member" style="margin-left: 17%;">
+    <img src="../imgs/image.png" alt="Member 2">
+    <p>Gay</p>
+  </div>
+  <div class="member" style="margin-left: 17%;">
+    <img src="../imgs/image.png" alt="Member 2">
+    <p>Gay</p>
+  </div>
+  <div class="member" style="margin-left: 17%;">
+    <img src="../imgs/image.png" alt="Member 2">
+    <p>Gay</p>
+  </div>
+  <br>
+
+    
+               
+            
     </main>
 
     <footer>
@@ -107,3 +146,4 @@
 </body>
 
 </html>
+
