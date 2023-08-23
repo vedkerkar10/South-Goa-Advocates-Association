@@ -85,15 +85,23 @@
         </nav>
     </header>
     <main>
+    <?php
+    $conn = mysqli_connect("localhost", "root", "", "db_sgaa");
+    $sql = "SELECT * FROM managing_committee";
+    $result = $conn->query($sql);
+    ?>
+
     <h2 class="text-center" >Managing Committee Members</h2>
+    <?php while ($row = $result->fetch_assoc()):?>
   <div class="member" style="margin-left: 45%;" >  
-    <img src="../imgs/image.png" alt="Member 1">
+    <img src="../imgs/image.png" alt="Member 1"> 
+    <h4><?php echo $row['Name'];?></h4>
     <p>President</p>
   </div>
   <br>
   <div class="member" style="margin-left: 17%;">
     <img src="../imgs/image.png" alt="Member 2">
-    <p>Gay</p>
+    <p>Vice-President</p>
   </div>
   <div class="member" style="margin-left: 17%;">
     <img src="../imgs/image.png" alt="Member 2">
@@ -115,12 +123,12 @@
   <div class="member" style="margin-left: 17%;">
     <img src="../imgs/image.png" alt="Member 2">
     <p>Gay</p>
-</div>
+   </div>
     <br>
     <div class="member" style="margin-left: 17%;">
     <img src="../imgs/image.png" alt="Member 2">
     <p>Gay</p>
-  </div>
+    </div>
   <div class="member" style="margin-left: 17%;">
     <img src="../imgs/image.png" alt="Member 2">
     <p>Gay</p>
@@ -146,4 +154,3 @@
 </body>
 
 </html>
-
