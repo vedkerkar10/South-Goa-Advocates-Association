@@ -62,7 +62,7 @@
                         </li>
                         <li><a class="nav-link" href="Contact_us.html">Contact Us</a></li>
                         <li>
-                            <a class="nav-link" >Gallery</a>
+                            <a class="nav-link" href="Gallery.html" >Gallery</a>
                         </li>
 
                     </ul>
