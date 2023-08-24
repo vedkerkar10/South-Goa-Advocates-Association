@@ -73,7 +73,7 @@
         <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsKy_jk6mo3VYu6zhoDsR-jbG2w7NrSCU&callback=initMap"
             async defer></script>
-        <script>
+        <!-- <script>
             function initMap() {
                 var location = { lat: 15.281207804563627, lng: 73.95639933636132 };
                 var map = new google.maps.Map(document.getElementById('map'), {
@@ -86,7 +86,7 @@
                     title: 'Your Location'
                 });
             }
-        </script>
+        </script> -->
     </head>
 
 
@@ -132,7 +132,12 @@
             <p>Margao, Goa</p>
         </section>
         <h1>Location on Map</h1>
-        <div id="map"></div>
+        <!-- <div id="map"></div> -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d481.09431786433447!2d73.95618375810008!3d15.281175897352773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTXCsDE2JzUyLjQiTiA3M8KwNTcnMjMuMCJF!5e0!3m2!1sen!2sin!4v1692812094413!5m2!1sen!2sin"
+            width="1000" height="450" style="border:0; align-self: center ;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         <footer>
             <p>&copy; 2023 South Goa Advocates Association. All rights reserved.</p>
         </footer>
@@ -142,5 +147,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+
 
 </html>

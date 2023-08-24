@@ -85,20 +85,39 @@
         </nav>
     </header>
     <main>
+    <h2 class="text-center" >Managing Committee Members</h2>
     <?php
     $conn = mysqli_connect("localhost", "root", "", "db_sgaa");
-    $sql = "SELECT * FROM managing_committee" ;
+    $sql = "SELECT * FROM managing_committee WHERE Sr_No='1'" ;
     $result = $conn->query($sql);
-    // $getContent = mysqli_fetch_array($result);
     ?>
-    
-    <h2 class="text-center" >Managing Committee Members</h2>
-  
+     
+    <?php while ($row = $result->fetch_assoc()): ?>
+  <div class="member" style="margin-left: 45%;">
+  <img src="../imgs/prashant.jpg" alt="">
+    <?php 
+    echo "<br>";
+    echo $row['Name'];
+    echo $row['Designation'];
+    ?>
+    <?php endwhile; ?>
+  </div>
+
+  <?php
+  $startIndex = '2';
+    $sql = "SELECT * FROM managing_committee WHERE Sr_No >= '$startIndex' LIMIT 10" ;
+    $result = $conn->query($sql);
+    ?>
     <?php while ($row = $result->fetch_assoc()): ?>
   <div class="member" style="margin-left: 17%;">
-    <img src="<?php echo $row['../imgs/prasad.jpg']; ?>" alt="<?php echo $row['Designation']; ?>">
+  <img src="../imgs/prashant.jpg" alt="">
+    <?php 
+    echo "<br>";
+    echo $row['Name'];
+    echo $row['Designation'];
+    ?>
+    <?php endwhile; ?>
   </div>
-<?php endwhile; ?>
 
   <!-- <div class="member" style="margin-left: 45%;" >  
     <img src="../imgs/image.png" alt="Member 1"> 
