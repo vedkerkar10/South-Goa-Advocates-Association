@@ -23,14 +23,16 @@
         margin-top: -10em;
     }
     #visitor-count {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-             background-color: #333; 
-             color: white; 
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 999;  
+}
+       
 </style>
 
 <body style=" display: flex; flex-direction: column; ">
@@ -38,6 +40,7 @@
         <div id="header">
             <h1 class="fs-1">SOUTH GOA ADVOCATES ASSOCIATION</h1>
             <h2 class="fs-1">Margao,Goa</h2>
+
             <div id="visitor-count">
                 <?php include('count.php'); ?>
              </div>
