@@ -90,14 +90,17 @@
     $sql = "SELECT * FROM managing_committee";
     $result = $conn->query($sql);
     ?>
-
+    
     <h2 class="text-center" >Managing Committee Members</h2>
-    <?php while ($row = $result->fetch_assoc()):?>
+    <?php while ($row = $result->fetch_assoc())
+    ?>
   <div class="member" style="margin-left: 45%;" >  
     <img src="../imgs/image.png" alt="Member 1"> 
-    <h4><?php echo $row['Name'];?></h4>
-    <p>President</p>
-  </div>
+    <?php
+     echo $row['Name'];
+   echo 'President';
+   echo '</div>';
+  ?>
   <br>
   <div class="member" style="margin-left: 17%;">
     <img src="../imgs/image.png" alt="Member 2">
@@ -105,50 +108,46 @@
   </div>
   <div class="member" style="margin-left: 17%;">
     <img src="../imgs/image.png" alt="Member 2">
-    <p>Gay</p>
+    <p>m8</p>
   </div>
   <div class="member" style="margin-left: 17%;">
     <img src="../imgs/image.png" alt="Member 2">
-    <p>Gay</p>
+    <p>m7</p>
   </div>
   <br>
   <div class="member" style="margin-left: 17%;">
     <img src="../imgs/image.png" alt="Member 2">
-    <p>Gay</p>
+    <p>m6</p>
   </div>
   <div class="member" style="margin-left: 17%;">
     <img src="../imgs/image.png" alt="Member 2">
-    <p>Gay</p>
+    <p>m5</p>
   </div>
   <div class="member" style="margin-left: 17%;">
     <img src="../imgs/image.png" alt="Member 2">
-    <p>Gay</p>
+    <p>m4</p>
    </div>
     <br>
     <div class="member" style="margin-left: 17%;">
     <img src="../imgs/image.png" alt="Member 2">
-    <p>Gay</p>
+    <p>m3</p>
     </div>
   <div class="member" style="margin-left: 17%;">
     <img src="../imgs/image.png" alt="Member 2">
-    <p>Gay</p>
+    <p>m2</p>
   </div>
   <div class="member" style="margin-left: 17%;">
     <img src="../imgs/image.png" alt="Member 2">
-    <p>Gay</p>
+    <p>m1</p>
   </div>
   <br>
-
-    
-               
-            
-    </main>
+  </main>
+   
 
     <footer>
         <p>&copy; 2023 South Goa Advocates Association. All rights reserved.</p>
     </footer>
 
-    <script src="comm_script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>
