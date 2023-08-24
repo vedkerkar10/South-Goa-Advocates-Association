@@ -93,8 +93,8 @@
     ?>
      
     <?php while ($row = $result->fetch_assoc()): ?>
-  <div class="member" style="margin-left: 45%;">
-  <img src="../imgs/prashant.jpg" alt="">
+  <div class="member" style="margin-left: 43.75%;">
+  <img src="../imgs/prasad.jpg" alt="">
     <?php 
     echo "<br>";
     echo $row['Name'];
@@ -104,20 +104,27 @@
   </div>
 
   <?php
-  $startIndex = '2';
-    $sql = "SELECT * FROM managing_committee WHERE Sr_No >= '$startIndex' LIMIT 10" ;
-    $result = $conn->query($sql);
-    ?>
-    <?php while ($row = $result->fetch_assoc()): ?>
-  <div class="member" style="margin-left: 17%;">
-  <img src="../imgs/prashant.jpg" alt="">
-    <?php 
-    echo "<br>";
-    echo $row['Name'];
-    echo $row['Designation'];
-    ?>
-    <?php endwhile; ?>
-  </div>
+$startIndex = '2';
+$sql = "SELECT * FROM managing_committee WHERE Sr_No >= '$startIndex' LIMIT 9"; // Limit to 9 members for a 3x3 grid
+$result = $conn->query($sql);
+$members = $result->fetch_all(MYSQLI_ASSOC);
+?>
+
+<div class="members-container" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;">
+    <?php foreach ($members as $row): ?>
+        <div class="member">
+            <img src="../imgs/prashant.jpg" alt="">
+            <br>
+            <?php 
+            echo $row['Name'];
+            echo "<br>";
+            echo $row['Designation'];
+            ?>
+        </div>
+    <?php endforeach; ?>
+</div>
+
+
 
   <!-- <div class="member" style="margin-left: 45%;" >  
     <img src="../imgs/image.png" alt="Member 1"> 
