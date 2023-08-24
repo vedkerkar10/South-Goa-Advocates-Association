@@ -87,20 +87,22 @@
     <main>
     <?php
     $conn = mysqli_connect("localhost", "root", "", "db_sgaa");
-    $sql = "SELECT * FROM managing_committee";
+    $sql = "SELECT * FROM managing_committee" ;
     $result = $conn->query($sql);
+    // $getContent = mysqli_fetch_array($result);
     ?>
     
     <h2 class="text-center" >Managing Committee Members</h2>
-    <?php while ($row = $result->fetch_assoc())
-    ?>
-  <div class="member" style="margin-left: 45%;" >  
+  
+    <?php while ($row = $result->fetch_assoc()): ?>
+  <div class="member" style="margin-left: 17%;">
+    <img src="<?php echo $row['../imgs/prasad.jpg']; ?>" alt="<?php echo $row['Designation']; ?>">
+  </div>
+<?php endwhile; ?>
+
+  <!-- <div class="member" style="margin-left: 45%;" >  
     <img src="../imgs/image.png" alt="Member 1"> 
-    <?php
-     echo $row['Name'];
-   echo 'President';
-   echo '</div>';
-  ?>
+  </div>
   <br>
   <div class="member" style="margin-left: 17%;">
     <img src="../imgs/image.png" alt="Member 2">
@@ -140,7 +142,7 @@
     <img src="../imgs/image.png" alt="Member 2">
     <p>m1</p>
   </div>
-  <br>
+  <br> -->
   </main>
    
 
