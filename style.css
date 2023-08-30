@@ -1,0 +1,232 @@
+/* Reset default margin and padding for all elements */
+
+body,
+h1,
+h2,
+p,
+table {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+body {
+  font-family: 'Noto Serif', serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  border-top: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+#header {
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#header h1 {
+  font-size: 2em;
+  width: 66%;
+}
+
+#homeabout a {
+  color: #ffffff;
+  padding: 3px;
+}
+
+#homeabout a:hover {
+  color: #105bf2;
+}
+
+#homeabout {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: end;
+  align-items: end;
+  gap: 6px;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.included-content {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-section,
+.right-section {
+  width: 25%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.left-section h2,
+.right-section h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  /* position: relative; */
+}
+
+.right-section {
+  margin-left: auto;
+}
+
+/* Add margin to separate the sections */
+.left-section {
+  margin-right: auto;
+}
+
+.related-sites {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  /* Adjust the width as needed */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.related-sites h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.related-sites ul {
+  list-style: none;
+  padding: 0;
+}
+
+.related-sites li {
+  margin-bottom: 10px;
+}
+
+.related-sites a {
+  color: #333;
+  text-decoration: none;
+}
+
+.related-sites a:hover {
+  color: #555;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #555;
+  box-shadow: 0 0 10px #add8e6;
+}
+
+.important-judgements {
+  width: 50%;
+  margin: auto;
+  /* padding: 20px;
+  margin-top: 30px; */
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* height: 110px; */
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+
+}
+
+/* Slideshow Animation */
+@keyframes fadeInOut {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
+
+#judgementsTable {
+  animation: fadeInOut 10s infinite;
+  opacity: 0;
+}
+
+#judgementsTable tr:not(:first-child) {
+  display: none;
+}
+
+#judgementsTable tr:first-child {
+  display: table-row;
+}
+
+.centered-header {
+  text-align: center;
+}
