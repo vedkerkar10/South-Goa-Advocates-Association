@@ -1457,3 +1457,12 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+.d-block {
+  display: block;
+  max-width: 50%;
+  /* You can adjust this value to your preferred width */
+  height: auto;
+  margin: 0 auto;
+  /* Center the image horizontally */
+}
