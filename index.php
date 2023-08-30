@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Goa Advocates Association</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        overflow-x: hidden;
+    }
+
+    header img {
+        max-width: 10px;
+        margin-right: 1110px;
+        margin-top: -10em;
+    }
+    #visitor-count {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 999;  
+}
+       
+</style>
+
+<body style=" display: flex; flex-direction: column; ">
+    <header>
+        <div id="header">
+            <h1 class="fs-1">SOUTH GOA ADVOCATES ASSOCIATION</h1>
+            <h2 class="fs-1">Margao,Goa</h2>
+
+            <div id="visitor-count">
+                <?php include('count.php'); ?>
+             </div>
+            
+        </div>
+        <img src="../imgs/t2.png" alt="" class="img-fluid" style="max-width: 150px;">
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav-bar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav" id="homeabout">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../src/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a " class=" nav-link" href="About.html">About</a>
+                        </li>
+                        <li><a class="nav-link" href="Contact_us.html">Contact Us</a></li>
+                        <li>
+                            <a class="nav-link" href="Gallery.html" >Gallery</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="content">
+        <div class="left-section">
+            <h2>Managing Committee 2022-24</h2>
+            <a href="../managing_comm_list/man_com.php" class="button">Details</a>
+            <br> <br> <br>
+            <h2>Members</h2>
+            <a href="../member_lsit/mem_list.php" class="button">Details</a>
+        </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://pbs.twimg.com/media/FRgzp38aUAEw-C0.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://gumlet.assettype.com/freepressjournal/2023-07/28381406-cec1-4299-9aee-b43c353b3220/big_101390_SGPDA_parking_lot__1_.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://pbs.twimg.com/media/FRgzp38aUAEw-C0.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="right-section">
+
+            <h2>Related Sites</h2>
+            <ul>
+                <li><a href="https://main.sci.gov.in/">Supreme Court Of India</a></li>
+                <li><a href="https://hcbombayatgoa.nic.in/">High Court Of Bombay At Goa</a></li>
+                <li><a href="https://services.ecourts.gov.in/ecourtindia_v6/">E-Courts Services</a></li>
+                <li><a href="https://judgments.ecourts.gov.in/pdfsearch/index.php">eSCR,Judgements and Orders</a></li>
+                <li><a href="https://confonet.nic.in/">Confonet</a></li>
+
+                <!-- Add more list items as needed -->
+            </ul>
+        </div>
+        <div>
+
+        </div>
+    </section>
+    <br>
+    <section class="important-judgements">
+        <h2>Important Judgements Of Goa State</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Case Name</th>
+                <th>Judge</th>
+            </tr>
+            <tr>
+                <td>2023-07-26</td>
+                <td>Case 1</td>
+                <td>Judge A</td>
+            </tr>
+            <tr>
+                <td>2023-07-27</td>
+                <td>Case 2</td>
+                <td>Judge B</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </table>
+    </section>
+    <br><br>
+
+    <footer>
+        <p>&copy; 2023 South Goa Advocates Association. All rights reserved.</p>
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</html>
