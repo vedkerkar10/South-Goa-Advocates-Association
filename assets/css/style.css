@@ -112,10 +112,10 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: #000000;
   transition: all 0.5s;
   z-index: 997;
-  height: 70px;
+  height: 120px;
 }
 
 #header.header-scrolled {
@@ -133,7 +133,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #000000;
+  color: #ffffff;
 }
 
 #header .logo img {
@@ -173,7 +173,7 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
-  color: #222222;
+  color: #ffffff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -189,7 +189,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #000000;
+  color: #ff0000;
 }
 
 .navbar .getstarted,
