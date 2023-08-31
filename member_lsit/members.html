@@ -74,10 +74,11 @@
     </div>
   </header><!-- End Header -->
 
-  <section class="table-section ">
+  <div class="container table-container">
     <h1 class="text-center">Members List</h1>
     <div class="container table-container">
-      <table>
+      <input type="text" id="searchInput" placeholder="Search member..." onkeyup="searchMembers()">
+      <table id="memberTable">
         <!-- The table headers will be dynamically added by JavaScript -->
         <tr id="HeadOfTable">
           <th>Serial No.</th>
@@ -2746,21 +2747,34 @@
         </tr>
 
 
-
-
-
-
-
-
-
       </table>
 
-
-
-
-
     </div>
-  </section>
+  </div>
+
+  <script>
+    function searchMembers() {
+      const searchInput = document.getElementById("searchInput");
+      const memberTable = document.getElementById("memberTable");
+      const tableRows = memberTable.getElementsByTagName("tr");
+      const searchTerm = searchInput.value.toLowerCase();
+
+      for (let i = 1; i < tableRows.length; i++) {
+        const nameColumn = tableRows[i].getElementsByTagName("td")[1];
+
+        if (nameColumn) {
+          const name = nameColumn.textContent.toLowerCase();
+          if (name.includes(searchTerm)) {
+            tableRows[i].style.display = "";
+          } else {
+            tableRows[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
 
 
 </body>
+
+</html>
