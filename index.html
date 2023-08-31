@@ -37,6 +37,63 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+    /* Common styles */
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .left-section,
+    .right-section {
+      width: 100%;
+      margin: 10px;
+    }
+
+    /* Carousel styles */
+    #carouselExampleCaptions {
+      max-width: 100%;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Adjustments for larger screens */
+    @media screen and (min-width: 768px) {
+      .content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .left-section {
+        width: 30%;
+        order: 1;
+      }
+
+      .right-section {
+        width: 30%;
+        order: 3;
+      }
+
+      #carouselExampleCaptions {
+        width: 40%;
+        order: 2;
+      }
+
+      .carousel-inner img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    /* Add more CSS for styling as needed */
+  </style>
+
 </head>
 
 <body>
@@ -99,16 +156,8 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section class="content" style="display: flex; align-items: center;">
-    <div class="left-section" style="flex: 1; margin-right: 20px;">
-      <h2>Managing Committee 2022-24</h2>
-      <a href="/com_member/com_mem_list.html" class="button">Details</a>
-      <br> <br> <br>
-      <h2>Members</h2>
-      <a href="../member_lsit/members.html" class="button">Details</a>
-    </div>
-
-    <div id="carouselExampleCaptions" class="carousel slide" style="flex: 10rems;">
+  <section class="content">
+    <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -119,29 +168,21 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://pbs.twimg.com/media/FRgzp38aUAEw-C0.jpg" class="d-block w-100"
-            style="max-width: 85%; height: auto;" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-
-          </div>
+          <img src="./assets/img/home_img.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block"></div>
         </div>
-        <div class="carousel-item">
+        <!-- <div class="carousel-item">
           <img
             src="https://gumlet.assettype.com/freepressjournal/2023-07/28381406-cec1-4299-9aee-b43c353b3220/big_101390_SGPDA_parking_lot__1_.jpg"
-            class="d-block w-100" style="max-width: 100%; height: auto;" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-
-          </div>
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block"></div>
         </div>
         <div class="carousel-item">
-          <img src="https://pbs.twimg.com/media/FRgzp38aUAEw-C0.jpg" class="d-block w-100"
-            style="max-width: 100%; height: auto;" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-
-          </div>
-        </div>
+          <img src="https://pbs.twimg.com/media/FRgzp38aUAEw-C0.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div> -->
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -150,20 +191,56 @@
         data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-      </button>
+      </button> -->
+      <br> <br>
+      <div class="center-container">
+        <h2 style="margin-left: 2rem; border-bottom: 2px solid #333;"">Important Circulars / Notifications</h2>
+        <ul class=" center-container" style="margin-left: 10rem;">
+          <li><a href="#"><u>Notification 1</u></a></li>
+          <li><a href="#"><u>Notification 2</u></a></li>
+          <li><a href="#"><u>Notification 3</u></a></li>
+          <li><a href="#"><u>Notification 4</u></a></li>
+          <li><a href="#"><u>Notification 5</u></a></li>
+          </ul>
+      </div>
     </div>
-    <div class="right-section" style="flex: 2;">
 
+    <div class="left-section">
+      <h2>Managing Committee 2022-24</h2>
+      <a href="/com_member/com_mem_list.html" class="button">Details</a>
+      <br> <br> <br>
+      <h2>Members</h2>
+      <a href="../member_lsit/members.html" class="button">Details</a>
+      <br> <br> <br>
+      <h2>Important Judgements From The State Of Goa</h2>
+      <a href="../member_lsit/members.html" class="button">Details</a>
+    </div>
+
+    <div class="right-section">
       <h2>Related Sites</h2>
       <ul>
-        <li><a href="https://main.sci.gov.in/">Supreme Court Of India</a></li>
-        <li><a href="https://hcbombayatgoa.nic.in/">High Court Of Bombay At Goa</a></li>
-        <li><a href="https://services.ecourts.gov.in/ecourtindia_v6/">E-Courts Services</a></li>
-        <li><a href="https://judgments.ecourts.gov.in/pdfsearch/index.php">eSCR,Judgements and Orders</a></li>
-        <li><a href="https://confonet.nic.in/">Confonet</a></li>
-
-        <!-- Add more list items as needed -->
+        <li><a href="https://main.sci.gov.in/" target="_blank"><u>Supreme Court Of India</u></a></li>
+        <li><a href="https://hcbombayatgoa.nic.in/" target="_blank"><u>High Court Of Bombay At Goa</u></a></li>
+        <li><a href="https://services.ecourts.gov.in/ecourtindia_v6/" target="_blank"><u>E-Courts Services</u></a></li>
+        <li><a href="https://judgments.ecourts.gov.in/pdfsearch/index.php" target="_blank"><u>eSCR,Judgements and
+              Orders</u></a></li>
+        <li><a href="https://confonet.nic.in/"><u>Confonet</u></a></li>
       </ul>
+      <br><br><br>
+      <div class="center-container">
+        <h2 style="border-bottom: 2px solid #333;"">Upcoming Events</h2>
+        <ul class=" center-container">
+          <li>01/09/2023: Interactive Session with Hon’ble Justice Prakash D. Naik, Judge Bombay High on
+            the Topic
+            “Conducting Criminal Trial under the NDPS Act”.<br>
+            <img src="./assets/img/Prakash D.Naik.jpg" alt="Prakash D.Naik" style="width: 100px;">
+          </li>
+          <br>
+          <li>October, 2023 – Workshop on cross examination for lawyers.</li>
+          <li>November, 2023 – All Goa Advocates Cricket Tournament</li>
+          <li>December, 2023 – Goa and Maharashtra Cultural Nite</li>
+          </ul>
+      </div>
     </div>
   </section>
   <main id="main">
@@ -176,6 +253,10 @@
           <p>
           <h4>
             The South Goa Advocates Association is an association of lawyers pre-dominantly practicing in the
+            District of South Goa. <br>
+            South Goa Advocates Association is registered with the District Registrar of South Goa under Registration
+            No. 103/GOA/94. <br>
+            South Goa Advocates Association is an association of lawyers pre-dominantly practicing in the
             District of South Goa
           </h4>
           </p>

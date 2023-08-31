@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title> South Goa Advocates Association</title>
+  <title>South Goa Advocates Association</title>
 
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -48,6 +48,10 @@
     th {
       background-color: #f2f2f2;
     }
+
+    #memberTable {
+      margin: 0 auto;
+    }
   </style>
 </head>
 
@@ -73,11 +77,12 @@
 
     </div>
   </header><!-- End Header -->
-
+  <br>
   <div class="container table-container">
     <h1 class="text-center">Members List</h1>
     <div class="container table-container">
-      <input type="text" id="searchInput" placeholder="Search member..." onkeyup="searchMembers()">
+      <input type="text" id="searchInput" placeholder="Search member" onkeyup="searchMembers()"
+        style="margin-left: 130px;">
       <table id="memberTable">
         <!-- The table headers will be dynamically added by JavaScript -->
         <tr id="HeadOfTable">
