@@ -635,7 +635,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 70px 0;
 }
 
 .section-bg {
@@ -1214,8 +1214,8 @@ section {
 }
 
 .team .member img {
-  max-width: 60%;
-  border-radius: 50%;
+  max-width: 150%;
+  border-radius: 0%;
   margin: 0 0 30px 0;
 }
 
@@ -1226,6 +1226,7 @@ section {
 }
 
 .team .member span {
+  text-align: center;
   font-style: italic;
   display: block;
   font-size: 13px;
