@@ -42,6 +42,41 @@
             max-width: 100%;
             height: auto;
         }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .gallery-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .gallery-image {
+            flex-basis: calc(33.33% - 20px);
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 
@@ -88,7 +123,6 @@
 
     <!-- Carousel wrapper -->
     <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
-        <!-- Controls -->
         <div class="d-flex justify-content-center mb-4">
             <button class="carousel-control-prev position-relative" type="button"
                 data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
@@ -259,93 +293,115 @@
                 </div>
             </div>
         </div>
-        <!-- Inner -->
-    </div>
-    <!-- Carousel wrapper -->
 
-    <section id="futsal">
-        <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.41.35 PM.jpeg"
-            alt="">
-        <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.41.37 PM (1).jpeg"
-            alt="">
-        <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.41.39 PM (2).jpeg"
-            alt="">
-        <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.42.24 PM (2).jpeg"
-            alt="">
-        <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.43.01 PM (1).jpeg"
-            alt="">
-        <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.43.42 PM.jpeg"
-            alt="">
-        <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.43.44 PM (1).jpeg"
-            alt="">
-        <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.42.29 PM (1).jpeg"
-            alt="">
+    </div>
+
+    <section id="futsal" class="gallery-section">
+        <div class="gallery-image">
+            <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.41.35 PM.jpeg"
+                class="img-thumbnail" alt="...">
+            <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.41.35 PM.jpeg"
+                class="img-thumbnail" alt="...">
+            <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.41.35 PM.jpeg"
+                alt="">
+            <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.41.37 PM (1).jpeg"
+                alt="">
+            <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.41.39 PM (2).jpeg"
+                alt="">
+            <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.42.24 PM (2).jpeg"
+                alt="">
+            <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.43.01 PM (1).jpeg"
+                alt="">
+            <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.43.42 PM.jpeg"
+                alt="">
+            <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.43.44 PM (1).jpeg"
+                alt="">
+            <img src="gallery\adv futsal tournament and lady adv sports meet\WhatsApp Image 2023-08-30 at 10.42.29 PM (1).jpeg"
+                alt="">
+        </div>
     </section>
 
-    <secction id="cricket">
-        <img src="gallery\cricket tournament 2022\WhatsApp Image 2023-08-30 at 10.18.03 PM (1).jpeg" alt="">
-        <img src="gallery\cricket tournament 2022\WhatsApp Image 2023-08-30 at 10.18.04 PM (1).jpeg" alt="">
-        <img src="gallery\cricket tournament 2022\WhatsApp Image 2023-08-30 at 10.18.04 PM.jpeg" alt="">
-    </secction>
-    <secction id="culturalnite">
-        <img src="gallery\cultural nite 2023\WhatsApp Image 2023-08-30 at 10.36.24 PM (2).jpeg" alt="">
-        <img src="gallery\cultural nite 2023\WhatsApp Image 2023-08-30 at 10.36.26 PM.jpeg" alt="">
-        <img src="gallery\cultural nite 2023\WhatsApp Image 2023-08-30 at 10.38.06 PM.jpeg" alt="">
-        <img src="gallery\cultural nite 2023\WhatsApp Image 2023-08-30 at 10.37.32 PM (1).jpeg" alt="">
-        <img src="gallery\cultural nite 2023\WhatsApp Image 2023-08-30 at 10.37.32 PM (2).jpeg" alt="">
-    </secction>
-    <secction id="gflawsem">
-        <img src="gallery\goa family laws seminar\WhatsApp Image 2023-08-30 at 10.20.53 PM (1).jpeg" alt="">
-        <img src="gallery\goa family laws seminar\WhatsApp Image 2023-08-30 at 10.20.54 PM.jpeg" alt="">
-        <img src="gallery\goa family laws seminar\WhatsApp Image 2023-08-30 at 10.20.59 PM (2).jpeg" alt="">
-        <img src="gallery\goa family laws seminar\WhatsApp Image 2023-08-30 at 10.20.55 PM (1).jpeg" alt="">
-        <img src="gallery\goa family laws seminar\WhatsApp Image 2023-08-30 at 10.21.00 PM (1).jpeg" alt="">
-    </secction>
-    <secction id="iccaaa">
-        <img src="gallery\INTERPLAY BETWEEN COMMERCIAL COURTS ACT & ARBITRATION ACT seminar\WhatsApp Image 2023-08-30 at 11.58.21 PM (2).jpeg"
-            alt="">
-        <img src="gallery\INTERPLAY BETWEEN COMMERCIAL COURTS ACT & ARBITRATION ACT seminar\WhatsApp Image 2023-08-30 at 11.58.21 PM.jpeg"
-            alt="">
-        <img src="gallery\INTERPLAY BETWEEN COMMERCIAL COURTS ACT & ARBITRATION ACT seminar\WhatsApp Image 2023-08-30 at 11.58.23 PM (1).jpeg"
-            alt="">
-        <img src="gallery\INTERPLAY BETWEEN COMMERCIAL COURTS ACT & ARBITRATION ACT seminar\WhatsApp Image 2023-08-30 at 11.58.24 PM (3).jpeg"
-            alt="">
-        <img src="gallery\INTERPLAY BETWEEN COMMERCIAL COURTS ACT & ARBITRATION ACT seminar\WhatsApp Image 2023-08-30 at 11.58.31 PM (1).jpeg"
-            alt="">
-    </secction>
-    <secction id="lacamp">
-        <img src="gallery\legal awareness camp cum cultural programme 2022\WhatsApp Image 2023-08-30 at 10.15.39 PM.jpeg"
-            alt="">
-        <img src="gallery\legal awareness camp cum cultural programme 2022\WhatsApp Image 2023-08-30 at 10.12.21 PM.jpeg"
-            alt="">
-        <img src="gallery\legal awareness camp cum cultural programme 2022\WhatsApp Image 2023-08-30 at 10.12.20 PM (2).jpeg"
-            alt="">
-        <img src="gallery\legal awareness camp cum cultural programme 2022\WhatsApp Image 2023-08-30 at 10.12.19 PM (1).jpeg"
-            alt="">
-        <img src="gallery\legal awareness camp cum cultural programme 2022\WhatsApp Image 2023-08-30 at 10.15.46 PM (1).jpeg"
-            alt="">
-    </secction>
-    <secction id="pandp">
-        <img src="gallery\play and party 2022\WhatsApp Image 2023-08-30 at 10.06.20 PM.jpeg" alt="">
-        <img src="gallery\play and party 2022\WhatsApp Image 2023-08-30 at 10.06.22 PM (2).jpeg" alt="">
-        <img src="gallery\play and party 2022\WhatsApp Image 2023-08-30 at 10.10.12 PM (1).jpeg" alt="">
-        <img src="gallery\play and party 2022\WhatsApp Image 2023-08-30 at 10.10.12 PM (2).jpeg" alt="">
-        <img src="gallery\play and party 2022\WhatsApp Image 2023-08-30 at 10.10.16 PM (2).jpeg" alt="">
-    </secction>
-    <secction id="yd2022">
-        <img src="gallery\yoga day 2022\WhatsApp Image 2023-08-30 at 10.05.45 PM.jpeg" alt="">
-        <img src="gallery\yoga day 2022\WhatsApp Image 2023-08-30 at 10.08.34 PM.jpeg" alt="">
-        <img src="gallery\yoga day 2022\WhatsApp Image 2023-08-30 at 10.08.37 PM (1).jpeg" alt="">
-        <img src="gallery\yoga day 2022\WhatsApp Image 2023-08-30 at 10.08.33 PM (1).jpeg" alt="">
-        <img src="gallery\yoga day 2022\WhatsApp Image 2023-08-30 at 10.08.41 PM (1).jpeg" alt="">
-    </secction>
-    <secction id="yd2023">
-        <img src="gallery\yoga day 2023\WhatsApp Image 2023-08-30 at 10.39.02 PM (1).jpeg" alt="">
-        <img src="gallery\yoga day 2023\WhatsApp Image 2023-08-30 at 10.39.03 PM.jpeg" alt="">
-        <img src="gallery\yoga day 2023\WhatsApp Image 2023-08-30 at 10.39.06 PM (1).jpeg" alt="">
-        <img src="gallery\yoga day 2023\WhatsApp Image 2023-08-30 at 10.39.07 PM (1).jpeg" alt="">
-        <img src="gallery\yoga day 2023\WhatsApp Image 2023-08-30 at 10.39.08 PM.jpeg" alt="">
-    </secction>
+    <section id="cricket" class="gallery-section">
+        <div class="gallery-image">
+            <img src="gallery\cricket tournament 2022\WhatsApp Image 2023-08-30 at 10.18.03 PM (1).jpeg" alt="">
+            <img src="gallery\cricket tournament 2022\WhatsApp Image 2023-08-30 at 10.18.04 PM (1).jpeg" alt="">
+            <img src="gallery\cricket tournament 2022\WhatsApp Image 2023-08-30 at 10.18.04 PM.jpeg" alt="">
+        </div>
+    </section>
+
+    <section id="culturalnite" class="gallery-section">
+        <div class="gallery-image">
+            <img src="gallery\cultural nite 2023\WhatsApp Image 2023-08-30 at 10.36.24 PM (2).jpeg" alt="">
+            <img src="gallery\cultural nite 2023\WhatsApp Image 2023-08-30 at 10.36.26 PM.jpeg" alt="">
+            <img src="gallery\cultural nite 2023\WhatsApp Image 2023-08-30 at 10.38.06 PM.jpeg" alt="">
+            <img src="gallery\cultural nite 2023\WhatsApp Image 2023-08-30 at 10.37.32 PM (1).jpeg" alt="">
+            <img src="gallery\cultural nite 2023\WhatsApp Image 2023-08-30 at 10.37.32 PM (2).jpeg" alt="">
+        </div>
+    </section>
+    <section id="gflawsem" class="gallery-section">
+        <div class="gallery-image">
+            <img src="gallery\goa family laws seminar\WhatsApp Image 2023-08-30 at 10.20.53 PM (1).jpeg" alt="">
+            <img src="gallery\goa family laws seminar\WhatsApp Image 2023-08-30 at 10.20.54 PM.jpeg" alt="">
+            <img src="gallery\goa family laws seminar\WhatsApp Image 2023-08-30 at 10.20.59 PM (2).jpeg" alt="">
+            <img src="gallery\goa family laws seminar\WhatsApp Image 2023-08-30 at 10.20.55 PM (1).jpeg" alt="">
+            <img src="gallery\goa family laws seminar\WhatsApp Image 2023-08-30 at 10.21.00 PM (1).jpeg" alt="">
+        </div>
+    </section>
+    <section id="iccaaa" class="gallery-section">
+        <div class="gallery-image">
+            <img src="gallery\INTERPLAY BETWEEN COMMERCIAL COURTS ACT & ARBITRATION ACT seminar\WhatsApp Image 2023-08-30 at 11.58.21 PM (2).jpeg"
+                alt="">
+            <img src="gallery\INTERPLAY BETWEEN COMMERCIAL COURTS ACT & ARBITRATION ACT seminar\WhatsApp Image 2023-08-30 at 11.58.21 PM.jpeg"
+                alt="">
+            <img src="gallery\INTERPLAY BETWEEN COMMERCIAL COURTS ACT & ARBITRATION ACT seminar\WhatsApp Image 2023-08-30 at 11.58.23 PM (1).jpeg"
+                alt="">
+            <img src="gallery\INTERPLAY BETWEEN COMMERCIAL COURTS ACT & ARBITRATION ACT seminar\WhatsApp Image 2023-08-30 at 11.58.24 PM (3).jpeg"
+                alt="">
+            <img src="gallery\INTERPLAY BETWEEN COMMERCIAL COURTS ACT & ARBITRATION ACT seminar\WhatsApp Image 2023-08-30 at 11.58.31 PM (1).jpeg"
+                alt="">
+        </div>
+    </section>
+    <section id="lacamp" class="gallery-section">
+        <div class="gallery-image">
+            <img src="gallery\legal awareness camp cum cultural programme 2022\WhatsApp Image 2023-08-30 at 10.15.39 PM.jpeg"
+                alt="">
+            <img src="gallery\legal awareness camp cum cultural programme 2022\WhatsApp Image 2023-08-30 at 10.12.21 PM.jpeg"
+                alt="">
+            <img src="gallery\legal awareness camp cum cultural programme 2022\WhatsApp Image 2023-08-30 at 10.12.20 PM (2).jpeg"
+                alt="">
+            <img src="gallery\legal awareness camp cum cultural programme 2022\WhatsApp Image 2023-08-30 at 10.12.19 PM (1).jpeg"
+                alt="">
+            <img src="gallery\legal awareness camp cum cultural programme 2022\WhatsApp Image 2023-08-30 at 10.15.46 PM (1).jpeg"
+                alt="">
+        </div>
+    </section>
+    <section id="pandp" class="gallery-section">
+        <div class="gallery-image">
+            <img src="gallery\play and party 2022\WhatsApp Image 2023-08-30 at 10.06.20 PM.jpeg" alt="">
+            <img src="gallery\play and party 2022\WhatsApp Image 2023-08-30 at 10.06.22 PM (2).jpeg" alt="">
+            <img src="gallery\play and party 2022\WhatsApp Image 2023-08-30 at 10.10.12 PM (1).jpeg" alt="">
+            <img src="gallery\play and party 2022\WhatsApp Image 2023-08-30 at 10.10.12 PM (2).jpeg" alt="">
+            <img src="gallery\play and party 2022\WhatsApp Image 2023-08-30 at 10.10.16 PM (2).jpeg" alt="">
+        </div>
+    </section>
+    <section id="yd2022" class="gallery-section">
+        <div class="gallery-image">
+            <img src="gallery\yoga day 2022\WhatsApp Image 2023-08-30 at 10.05.45 PM.jpeg" alt="">
+            <img src="gallery\yoga day 2022\WhatsApp Image 2023-08-30 at 10.08.34 PM.jpeg" alt="">
+            <img src="gallery\yoga day 2022\WhatsApp Image 2023-08-30 at 10.08.37 PM (1).jpeg" alt="">
+            <img src="gallery\yoga day 2022\WhatsApp Image 2023-08-30 at 10.08.33 PM (1).jpeg" alt="">
+            <img src="gallery\yoga day 2022\WhatsApp Image 2023-08-30 at 10.08.41 PM (1).jpeg" alt="">
+        </div>
+    </section>
+    <section id="yd2023" class="gallery-section">
+        <div class="gallery-image">
+            <img src="gallery\yoga day 2023\WhatsApp Image 2023-08-30 at 10.39.02 PM (1).jpeg" alt="">
+            <img src="gallery\yoga day 2023\WhatsApp Image 2023-08-30 at 10.39.03 PM.jpeg" alt="">
+            <img src="gallery\yoga day 2023\WhatsApp Image 2023-08-30 at 10.39.06 PM (1).jpeg" alt="">
+            <img src="gallery\yoga day 2023\WhatsApp Image 2023-08-30 at 10.39.07 PM (1).jpeg" alt="">
+            <img src="gallery\yoga day 2023\WhatsApp Image 2023-08-30 at 10.39.08 PM.jpeg" alt="">
+        </div>
+    </section>
 
 </body>
 
