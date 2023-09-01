@@ -119,6 +119,29 @@
             font-style: italic;
             color: #aaaaaa;
         }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* Style for individual images */
+        .image-container img {
+            max-width: 30%;
+            /* Adjust the width as needed for desktop view */
+            margin-bottom: 1rem;
+        }
+
+        /* Media query for mobile view */
+        @media screen and (max-width: 767px) {
+            .image-container img {
+                max-width: 100%;
+                margin-left: -1rem;
+                justify-content: center;
+                /* Full width for mobile view */
+            }
+        }
     </style>
 </head>
 
@@ -151,95 +174,95 @@
             <div class="section-title">
                 <h2>Managing Committee List</h2>
             </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center">
-                    <div class="member text-center" style="width: 30px; padding: 10px;">
-                        <img src="../images/prasad.jpg" alt="" style="max-width: 100%;">
-                        <h4>Adv. Prasad S. Naik</h4>
-                        <span>President</span>
+            <div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center">
+                        <div class="member text-center" style="width: 30px; padding: 10px;">
+                            <img src="../images/prasad.jpg" alt="" style="max-width: 100%;">
+                            <h4>Adv. Prasad S. Naik</h4>
+                            <span>President</span>
+                        </div>
                     </div>
+                </div>
+                <div class="row justify-content-center" style="margin-left: 14rem;">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="member text-center" style="width: 30px; padding: 10px;">
+                            <img src="../images/shrada.jpg" alt="" style="max-width: 100%;">
+                            <h4>Adv. Shraddha Borkar</h4>
+                            <span>Vice President</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="member text-center" style="width: 30px; padding: 10px;">
+                            <img src="../images/rohit.jpg" alt="" style="max-width: 100%;">
+                            <h4>Adv. Roheet Shirodkar</h4>
+                            <span>Secretary</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="member text-center" style="width: 30px; padding: 10px;">
+                            <img src="../images/chuvo.jpg" alt="" style="max-width: 100%;">
+                            <h4>Adv. Chuvo Barbosa</h4>
+                            <span>Treasurer</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-left: 220px;">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="member text-center" style="width: 30px; padding: 10px;">
+                            <img src="../images/ashtrid.jpg" alt="" style="max-width: 100%;">
+                            <h4>Adv. Ashtrid N. Almeida</h4>
+                            <span>Female Member</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="member text-center" style="width: 30px; padding: 10px;">
+                            <img src="../images/prashant.jpg" alt="" style="max-width: 100%;">
+                            <h4>Adv. Prashant Borkar</h4>
+                            <span>Margao Member</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="member text-center" style="width: 30px; padding: 10px;">
+                            <img src="../images/sudhir.jpg" alt="" style="max-width: 100%;">
+                            <h4>Adv. Sudhir Naik</h4>
+                            <span>Vasco Member</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-left: 220px;">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="member text-center" style="width: 30px; padding: 10px;">
+                            <img src="../images/anju.jpg" alt="" style="max-width: 100%;">
+                            <h4>Adv. Anju S. Naik Amonkar</h4>
+                            <span>Quepem Member</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="member text-center" style="width: 30px; padding: 10px;">
+                            <img src="../images/kashinbath.jpg" alt="" style="max-width: 100%;">
+                            <h4>Adv. Kashinath Sawant Dessai</h4>
+                            <span>Sanguem Member</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="member text-center" style="width: 30px; padding: 10px;">
+                            <img src="../images/kunal.jpg" alt="" style="max-width: 100%;">
+                            <h4>Adv. Kunal D. Komarpant</h4>
+                            <span>Canacona Member</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="row justify-content-center" style="margin-left: 220px;">
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                    <div class="member text-center" style="width: 30px; padding: 10px;">
-                        <img src="../images/shrada.jpg" alt="" style="max-width: 100%;">
-                        <h4>Adv. Shraddha Borkar</h4>
-                        <span>Vice President</span>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                    <div class="member text-center" style="width: 30px; padding: 10px;">
-                        <img src="../images/rohit.jpg" alt="" style="max-width: 100%;">
-                        <h4>Adv. Roheet Shirodkar</h4>
-                        <span>Secretary</span>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                    <div class="member text-center" style="width: 30px; padding: 10px;">
-                        <img src="../images/chuvo.jpg" alt="" style="max-width: 100%;">
-                        <h4>Adv. Chuvo Barbosa</h4>
-                        <span>Treasurer</span>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row" style="margin-left: 220px;">
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                    <div class="member text-center" style="width: 30px; padding: 10px;">
-                        <img src="../images/ashtrid.jpg" alt="" style="max-width: 100%;">
-                        <h4>Adv. Ashtrid N. Almeida</h4>
-                        <span>Female Member</span>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                    <div class="member text-center" style="width: 30px; padding: 10px;">
-                        <img src="../images/prashant.jpg" alt="" style="max-width: 100%;">
-                        <h4>Adv. Prashant Borkar</h4>
-                        <span>Margao Member</span>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                    <div class="member text-center" style="width: 30px; padding: 10px;">
-                        <img src="../images/sudhir.jpg" alt="" style="max-width: 100%;">
-                        <h4>Adv. Sudhir Naik</h4>
-                        <span>Vasco Member</span>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row" style="margin-left: 220px;">
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                    <div class="member text-center" style="width: 30px; padding: 10px;">
-                        <img src="../images/anju.jpg" alt="" style="max-width: 100%;">
-                        <h4>Adv. Anju S. Naik Amonkar</h4>
-                        <span>Quepem Member</span>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                    <div class="member text-center" style="width: 30px; padding: 10px;">
-                        <img src="../images/kashinbath.jpg" alt="" style="max-width: 100%;">
-                        <h4>Adv. Kashinath Sawant Dessai</h4>
-                        <span>Sanguem Member</span>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                    <div class="member text-center" style="width: 30px; padding: 10px;">
-                        <img src="../images/kunal.jpg" alt="" style="max-width: 100%;">
-                        <h4>Adv. Kunal D. Komarpant</h4>
-                        <span>Canacona Member</span>
-                    </div>
-                </div>
-
-            </div>
-
         </div>
     </section>
 
